@@ -1,12 +1,9 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:hospital_project/ui/first_screen.dart';
-import 'package:hospital_project/ui/login_screen.dart';
+import 'package:hospital_project/ui/doctors_page.dart';
+import 'package:hospital_project/ui/splash_screen.dart';
 
 void main() {
-  runApp(const MaterialApp(
-    home: MyApp(),
-  ));
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -15,10 +12,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: FirstScreen(),
+      // home: const SplashScreen(),
+      home: DoctorsListPage(),
       theme: ThemeData(
-        fontFamily: 'Sf-pro'
-      ) ,
+        fontFamily: 'Sf-pro',
+      ),
     );
   }
 }

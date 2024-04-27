@@ -5,9 +5,12 @@ import 'package:hospital_project/resources/resources.dart';
 
 void main() {
   test('images assets test', () {
+    expect(File(Images.ambulance).existsSync(), isTrue);
     expect(File(Images.bell).existsSync(), isTrue);
+    expect(File(Images.bg).existsSync(), isTrue);
     expect(File(Images.board).existsSync(), isTrue);
     expect(File(Images.hospital).existsSync(), isTrue);
     expect(File(Images.speech).existsSync(), isTrue);
+    expect(File(Images.splash).existsSync(), isTrue);
   });
 }

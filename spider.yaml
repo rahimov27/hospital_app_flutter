@@ -33,3 +33,8 @@ groups:
   - path: assets/images
     class_name: Images
     types: [ .png, .jpg, .jpeg, .webp, .webm, .bmp ]
+  - path: assets/svgs
+    class_name: AppSvgs
+    types: [ .svg]
+
+

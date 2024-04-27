@@ -68,15 +68,9 @@ class FirstScreen extends StatelessWidget {
             const SizedBox(
               height: 5,
             ),
-            Center(
-                child: AppButton(
-                    title: "Войти",
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => LoginScreen()));
-                    }))
+            Center(child: AppButton(title: "Войти", onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context) => LoginScreen()));
+            }))
           ],
         ),
       ),

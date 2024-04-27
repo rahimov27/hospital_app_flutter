@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hospital_project/core/app_fonts.dart';
+import 'package:hospital_project/ui/check_code_page.dart';
 
 import '../core/common_widgets/app_button.dart';
 
@@ -71,6 +72,7 @@ class LoginScreen extends StatelessWidget {
               child: AppButton(
                 title: "Далее",
                 onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => CheckCodePage(code: code,)));
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
                       content: Text(
